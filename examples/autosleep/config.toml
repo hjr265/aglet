@@ -1,0 +1,11 @@
+[Hooks.AutoLock]
+Type = "xidle"
+Exec = "physlock -locknow"
+
+Duration = "3m"
+
+[Hooks.AutoSleep]
+Type = "xidle"
+Exec = "systemctl suspend"
+
+Duration = "10m"
